@@ -1,0 +1,271 @@
+<html>
+  <head>
+    <title>MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200&family=Qahiri&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+        </div>
+        <a class="navbar-brand" href="#"> Case Study </a>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#welcome"> HOME </a></li>
+                <li><a href="#about"> ABOUT </a></li>
+                <li><a href="#test"> TEST </a></li>
+                <li><a href="#contact"> CONTACT </a></li>
+            </ul>
+        </div>
+        
+       </nav>   
+
+       <center>
+
+        <section id="welcome">
+          <div class="col-xs-12 header_div">
+            <h1>MobileNet vs Microsoft Azure
+              <img src="be-curious-slower.gif">
+            </h1>
+          </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <section id="about">
+          <p id="head">Important Info</p>
+        <div class="line"></div>
+        <p id="info">MobileNet is a CNN architecture model for Image Classification and Mobile Vision. 
+          It is a neural network designed for mobile and embedded vision applications. 
+          MobileNets are based on a streamlined architecture that uses separable convolutions. It could be used
+          in object detection, finegrain classification, face recognition or image classification, 
+          large-scale geo localization, etc. If you are using MobileNet over other state-of-the-art
+          deep learning models, then you are going to have a reduced netwrok size and number
+          of parameters, faster performance, small and low-latency convolutional neural netwroks. 
+          One problem with MobileNet is the accuracy. Even with all of its advatanges, the results
+          aren't as accurate as other networks but don't worry because the accuracy is just a little
+          slightly worse. <br><br> Microsoft Azure is a public cloud computing platform that has more than 200 products and cloud services,
+          designed to hep you come up with new solutions for uncertain phenominons in life - 
+          today's challenges with social media and the internet. It can be used for services
+          such as analytics, virtual computing, storage, networking, and much more. It has 
+          various tools and technologies which can help businesses to manage challenges including
+          e-commerce, finance, etc. Microsoft Azure has 5 differnt customer support options along
+          with more platforms for hosting databases. </p>
+        </section>
+
+        <br><br>
+        <hr>
+        <Br><Br>
+
+        <section id="test">
+          <p id="head">Test & Result</p>
+          <div class="line"></div>
+          <br>
+        </center>
+        <div class="col-sm-6 col-xs-12">
+            <ol>
+            <div class="travel_mainDiv">
+              <p id="sub">1. Camera</p>
+              <img class="img-responsive" id="pic" src="camera.jpg">
+              <hr>
+              <h5 class="text-left text-capitalize">Output on Wolfram Project </h5>
+              <p class="text-muted text-left"> </p>
+            <br>
+              <h5 class="text-left text-capitalize">Output on MobileNet</h5>
+              <p class="text-muted text-left"> </p>
+              <br><br>
+              <div id="eval">
+                <h4>Result - </h4>
+                <hr>
+                <p id="eval_answer"></p>
+              </div>
+              <br>
+              <br>
+            </div>
+            </ol>
+          </div>
+
+          <br>
+
+          <div class="col-sm-6 col-xs-12">
+            <ol>
+            <div class="travel_mainDiv">
+              <p id="sub">2. Water Bottle</p>
+              <img class="img-responsive" id="pic" src="waterbottle.jpg">
+              <hr>
+              <h5 class="text-left text-capitalize">Output on Wolfram Project </h5>
+              <p class="text-muted text-left"> </p>
+            <br>
+              <h5 class="text-left text-capitalize">Output on MobileNet</h5>
+              <p class="text-muted text-left"> </p>
+              <br><br>
+              <div id="eval">
+                <h4>Result - </h4>
+                <hr>
+                <p id="eval_answer"></p>
+              </div>
+              <br>
+              <br>
+            </div>
+            </ol>
+          </div>
+
+          <br> <br> <br>
+          <hr>
+          <br> <br>
+
+          <div class="col-sm-6 col-xs-12">
+            <ol>
+            <div class="travel_mainDiv">
+              <p id="sub">3. Bed</p>
+              <img class="img-responsive" id="pic" src="bed.jpg">
+              <hr>
+              <h5 class="text-left text-capitalize">Output on wolfram Project </h5>
+              <p class="text-muted text-left"> </p>
+            <br>
+              <h5 class="text-left text-capitalize">Output on MobileNet</h5>
+              <p class="text-muted text-left"> </p>
+              <br><br>
+              <div id="eval">
+                <h4>Result - </h4>
+                <hr>
+                <p id="eval_answer"></p>
+              </div>
+              <br>
+              <br>
+            </div>
+            </ol>
+          </div>
+
+          <br>
+
+          <div class="col-sm-6 col-xs-12">
+            <ol>
+            <div class="travel_mainDiv">
+              <p id="sub">4. A Pair of Scissors</p>
+              <img class="img-responsive" id="pic" src="cutters.jpg">
+              <hr>
+              <h5 class="text-left text-capitalize">Output on Wolfram Project </h5>
+              <p class="text-muted text-left"> </p>
+            <br>
+              <h5 class="text-left text-capitalize">Output on MobileNet</h5>
+              <p class="text-muted text-left"> </p>
+              <br><br>
+              <div id="eval">
+                <h4>Result - </h4>
+                <hr>
+                <p id="eval_answer"></p>
+              </div>
+              <br>
+              <br>
+            </div>
+            </ol>
+          </div>
+
+          <br> <br> <br>
+          <hr>
+          <br> <br>
+
+          <div class="col-sm-6 col-xs-12">
+            <ol>
+            <div class="travel_mainDiv">
+              <p id="sub">5. The Ocean</p>
+              <img class="img-responsive" id="pic" src="ocean.jpg">
+              <hr>
+              <h5 class="text-left text-capitalize">Output on Wolfram Project </h5>
+              <p class="text-muted text-left"> </p>
+            <br>
+              <h5 class="text-left text-capitalize">Output on MobileNet</h5>
+              <p class="text-muted text-left"> </p>
+              <br><br>
+              <div id="eval">
+                <h4>Result - </h4>
+                <hr>
+                <p id="eval_answer"></p>
+              </div>
+              <br>
+              <br>
+            </div>
+            </ol>
+          </div>
+
+          <br>
+
+          <div class="col-sm-6 col-xs-12">
+            <ol>
+            <div class="travel_mainDiv">
+              <p id="sub">6. Sofa</p>
+              <img class="img-responsive" id="pic" src="sofa.jpg">
+              <hr>
+              <h5 class="text-left text-capitalize">Output on Wolfram Project </h5>
+              <p class="text-muted text-left"> </p>
+            <br>
+              <h5 class="text-left text-capitalize">Output on MobileNet</h5>
+              <p class="text-muted text-left"> </p>
+              <br><br>
+              <div id="eval">
+                <h4>Result - </h4>
+                <hr>
+                <p id="eval_answer"></p>
+              </div>
+              <br>
+              <br>
+            </div>
+            </ol>
+          </div>
+
+          <br> <br> <br>
+          <hr>
+          <br><br>
+
+          <div class="col-sm-6 col-xs-12">
+            <ol>
+            <div class="travel_mainDiv">
+              <p id="sub">7. Sweaters</p>
+              <img class="img-responsive" id="pic" src="sweaters.jpg">
+              <hr>
+              <h5 class="text-left text-capitalize">Output on Wolfram Project </h5>
+              <p class="text-muted text-left"> </p>
+            <br>
+              <h5 class="text-left text-capitalize">Output on MobileNet</h5>
+              <p class="text-muted text-left"> </p>
+              <br><br>
+              <div id="eval">
+                <h4>Result - </h4>
+                <hr>
+                <p id="eval_answer"></p>
+              </div>
+              <br>
+              <br>
+            </div>
+            </ol>
+          </div>
+
+        </section>
+
+  </body>
+  </html>
